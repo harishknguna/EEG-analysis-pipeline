@@ -1,7 +1,7 @@
 # EEG-analysis-pipeline
 EEG data analysis pipeline
 
-The processing pipeline follows a clear structure, moving from raw EEG data input and preprocessing to group-level analyses, visualization, and data export. The analysis is organized into Sensor Space and Source Space analysis with specific scripts handling each step.
+The processing pipeline follows a clear structure, moving from fieldTrip pre-processed EEG data to MNE time domain ERP and time-frequency analyses, group-level analyses, visualization, and data export. The analysis is organized into Sensor Space and Source Space analysis with specific scripts handling each step.
 
 1. Data Input & Preprocessing
 	•	Scripts (01a, 01b): Convert EEG data from FieldTrip into single-subject epochs as numpy arrays.
