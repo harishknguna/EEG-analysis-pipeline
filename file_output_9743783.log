@@ -1,0 +1,324 @@
+Usage : mne command options
+
+Accepted commands :
+
+	- anonymize
+	- browse_raw
+	- bti2fiff
+	- clean_eog_ecg
+	- compare_fiff
+	- compute_proj_ecg
+	- compute_proj_eog
+	- coreg
+	- flash_bem
+	- freeview_bem_surfaces
+	- kit2fiff
+	- make_scalp_surfaces
+	- maxfilter
+	- prepare_bem_model
+	- report
+	- setup_forward_model
+	- setup_source_space
+	- show_fiff
+	- show_info
+	- surf2bem
+	- sys_info
+	- watershed_bem
+	- what
+
+Example : mne browse_raw --raw sample_audvis_raw.fif
+
+Getting help example : mne compute_proj_eog -h
+total 595
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine 11608 23 oct.  12:30 01a_import_ftdata_and_export_epoch_numpy_array_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine 12802 28 oct.  12:51 01b_import_ftdata_and_export_epoch_numpy_array_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  8880 28 oct.  13:18 02a_import_epoch_array_and_save_epochs_evoked_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  9145 28 oct.  14:32 02b_import_epoch_array_and_save_epochs_evoked_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  5797 23 oct.  14:36 03a_import_single_sub_evoked_make_plots_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  6213 28 oct.  13:00 03b_import_single_sub_evoked_make_plots_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  7367 28 oct.  13:09 04a_import_single_sub_evoked_make_group_plots_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  7924 28 oct.  13:08 04b_import_single_sub_evoked_make_group_plots_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  7441 28 oct.  16:05 05a_import_single_sub_epochs_make_multitaperTF_plots_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  8504 28 oct.  16:25 05b_import_single_sub_epochs_make_multitaperTF_plots_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  8445 29 oct.  13:08 06a_import_single_sub_TF_make_group_multitapTF_plots_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  9380 29 oct.  13:25 06b_import_single_sub_TF_make_group_multitapTF_plots_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine 12842  4 nov.  15:35 07a_import_single_sub_epochs_make_morletTF_plots_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine 13829  4 nov.  15:40 07b_import_single_sub_epochs_make_morletTF_plots_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine  7855  4 nov.  15:22 08a_import_single_sub_epochs_make_group_morletTF_plots_GOODremove.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine 10168  4 nov.  16:12 08b_import_single_sub_TF_make_group_morletTF_plots_GOODpatients.py
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine   432  5 nov.  10:12 bashgogait.sh
+-rw-r--r--+ 1 harish.gunasekaran Utilisa. du domaine 21111  5 nov.  10:14 config_for_gogait.py
+-rwxrwx---+ 1 fanny.grosselin    Utilisa. du domaine 21107  4 nov.  13:57 config_for_gogait.py~
+-rw-rw----+ 1 harish.gunasekaran Utilisa. du domaine   129  5 nov.  10:13 error_output_9743753.log
+-rw-rw----+ 1 harish.gunasekaran Utilisa. du domaine   129  5 nov.  10:13 error_output_9743758.log
+-rw-rw----+ 1 harish.gunasekaran Utilisa. du domaine     0  5 nov.  10:27 error_output_9743783.log
+-rw-rw----+ 1 harish.gunasekaran Utilisa. du domaine  9618  5 nov.  10:13 file_output_9743753.log
+-rw-rw----+ 1 harish.gunasekaran Utilisa. du domaine  9618  5 nov.  10:13 file_output_9743758.log
+-rw-rw----+ 1 harish.gunasekaran Utilisa. du domaine   510  5 nov.  10:27 file_output_9743783.log
+drwxrwx---+ 2 harish.gunasekaran Utilisa. du domaine 26624  4 nov.  13:57 __pycache__
+/network/lustre/iss01/apps/lang/anaconda/3/2023.03/mne/1.3.0/bin/python
+Processing subject: ABSTA46
+Input:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/ABSTA46_ON_BLOCKs.mat
+Input:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/ABSTA46_OFF_BLOCKs.mat
+2199
+(1, 132, 2199)
+(2, 132, 2199)
+(3, 132, 2199)
+(4, 132, 2199)
+(5, 132, 2199)
+(6, 132, 2199)
+(7, 132, 2199)
+(8, 132, 2199)
+(9, 132, 2199)
+(10, 132, 2199)
+(11, 132, 2199)
+(12, 132, 2199)
+(13, 132, 2199)
+(14, 132, 2199)
+(15, 132, 2199)
+(16, 132, 2199)
+(17, 132, 2199)
+(18, 132, 2199)
+(19, 132, 2199)
+(20, 132, 2199)
+(21, 132, 2199)
+(22, 132, 2199)
+(23, 132, 2199)
+(24, 132, 2199)
+(25, 132, 2199)
+(26, 132, 2199)
+(27, 132, 2199)
+(28, 132, 2199)
+(29, 132, 2199)
+(30, 132, 2199)
+(31, 132, 2199)
+(33, 132, 2199)
+(34, 132, 2199)
+(35, 132, 2199)
+(36, 132, 2199)
+(37, 132, 2199)
+(38, 132, 2199)
+(39, 132, 2199)
+(40, 132, 2199)
+(41, 132, 2199)
+(42, 132, 2199)
+(43, 132, 2199)
+(44, 132, 2199)
+(45, 132, 2199)
+(46, 132, 2199)
+(47, 132, 2199)
+(48, 132, 2199)
+(49, 132, 2199)
+(50, 132, 2199)
+(51, 132, 2199)
+(52, 132, 2199)
+(53, 132, 2199)
+(54, 132, 2199)
+(55, 132, 2199)
+(56, 132, 2199)
+(57, 132, 2199)
+(58, 132, 2199)
+(59, 132, 2199)
+(60, 132, 2199)
+(1, 2199)
+(2, 2199)
+(3, 2199)
+(4, 2199)
+(5, 2199)
+(6, 2199)
+(7, 2199)
+(8, 2199)
+(9, 2199)
+(10, 2199)
+(11, 2199)
+(12, 2199)
+(13, 2199)
+(14, 2199)
+(15, 2199)
+(16, 2199)
+(17, 2199)
+(18, 2199)
+(19, 2199)
+(20, 2199)
+(21, 2199)
+(22, 2199)
+(23, 2199)
+(24, 2199)
+(25, 2199)
+(26, 2199)
+(27, 2199)
+(28, 2199)
+(29, 2199)
+(30, 2199)
+(31, 2199)
+(33, 2199)
+(34, 2199)
+(35, 2199)
+(36, 2199)
+(37, 2199)
+(38, 2199)
+(39, 2199)
+(40, 2199)
+(41, 2199)
+(42, 2199)
+(43, 2199)
+(44, 2199)
+(45, 2199)
+(46, 2199)
+(47, 2199)
+(48, 2199)
+(49, 2199)
+(50, 2199)
+(51, 2199)
+(52, 2199)
+(53, 2199)
+(54, 2199)
+(55, 2199)
+(56, 2199)
+(57, 2199)
+(58, 2199)
+(59, 2199)
+(60, 2199)
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOc_cue_OFF_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOu_cue_OFF_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_NoGo_cue_OFF_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOc_target_OFF_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOu_target_OFF_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_NoGo_target_OFF_eeg_prep
+2191
+(1, 132, 2191)
+(2, 132, 2191)
+(4, 132, 2191)
+(5, 132, 2191)
+(6, 132, 2191)
+(7, 132, 2191)
+(8, 132, 2191)
+(9, 132, 2191)
+(10, 132, 2191)
+(11, 132, 2191)
+(12, 132, 2191)
+(13, 132, 2191)
+(14, 132, 2191)
+(15, 132, 2191)
+(16, 132, 2191)
+(17, 132, 2191)
+(18, 132, 2191)
+(19, 132, 2191)
+(20, 132, 2191)
+(21, 132, 2191)
+(22, 132, 2191)
+(23, 132, 2191)
+(24, 132, 2191)
+(25, 132, 2191)
+(26, 132, 2191)
+(27, 132, 2191)
+(28, 132, 2191)
+(29, 132, 2191)
+(30, 132, 2191)
+(31, 132, 2191)
+(32, 132, 2191)
+(33, 132, 2191)
+(34, 132, 2191)
+(35, 132, 2191)
+(36, 132, 2191)
+(37, 132, 2191)
+(38, 132, 2191)
+(39, 132, 2191)
+(40, 132, 2191)
+(41, 132, 2191)
+(42, 132, 2191)
+(43, 132, 2191)
+(44, 132, 2191)
+(45, 132, 2191)
+(46, 132, 2191)
+(47, 132, 2191)
+(48, 132, 2191)
+(49, 132, 2191)
+(50, 132, 2191)
+(51, 132, 2191)
+(52, 132, 2191)
+(53, 132, 2191)
+(54, 132, 2191)
+(55, 132, 2191)
+(56, 132, 2191)
+(57, 132, 2191)
+(58, 132, 2191)
+(59, 132, 2191)
+(60, 132, 2191)
+(1, 2191)
+(2, 2191)
+(4, 2191)
+(5, 2191)
+(6, 2191)
+(7, 2191)
+(8, 2191)
+(9, 2191)
+(10, 2191)
+(11, 2191)
+(12, 2191)
+(13, 2191)
+(14, 2191)
+(15, 2191)
+(16, 2191)
+(17, 2191)
+(18, 2191)
+(19, 2191)
+(20, 2191)
+(21, 2191)
+(22, 2191)
+(23, 2191)
+(24, 2191)
+(25, 2191)
+(26, 2191)
+(27, 2191)
+(28, 2191)
+(29, 2191)
+(30, 2191)
+(31, 2191)
+(32, 2191)
+(33, 2191)
+(34, 2191)
+(35, 2191)
+(36, 2191)
+(37, 2191)
+(38, 2191)
+(39, 2191)
+(40, 2191)
+(41, 2191)
+(42, 2191)
+(43, 2191)
+(44, 2191)
+(45, 2191)
+(46, 2191)
+(47, 2191)
+(48, 2191)
+(49, 2191)
+(50, 2191)
+(51, 2191)
+(52, 2191)
+(53, 2191)
+(54, 2191)
+(55, 2191)
+(56, 2191)
+(57, 2191)
+(58, 2191)
+(59, 2191)
+(60, 2191)
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOc_cue_ON_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOu_cue_ON_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_NoGo_cue_ON_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOc_target_ON_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_GOu_target_ON_eeg_prep
+  Writing the sub-epochs numpy array to disk
+Output:  /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait/EEG/140_cleantrialdata_500Hz_1-40Hz_merged_rerefGOOD/ABSTA46/GOGAIT_ABSTA46_NoGo_target_ON_eeg_prep

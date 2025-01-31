@@ -1,0 +1,3 @@
+Traceback (most recent call last):
+  File "<stdin>", line 281, in <module>
+AttributeError: 'Info' object has no attribute 'save'
