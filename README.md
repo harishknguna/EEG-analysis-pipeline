@@ -23,10 +23,23 @@ The processing pipeline follows a clear structure, moving from raw EEG data inpu
 4. Source-Level Analysis (Source Space Analysis)
    Single-Subject Level:
 	•	Scripts (10a, 10b): Scripts save evoked (stcEVK) data as numpy arrays.
-     •	Scripts (15a, 15b): Scripts save TF (stcTFR) data as numpy arrays.
+     	•	Scripts (15a, 15b): Scripts save TF (stcTFR) data as numpy arrays.
    Group-Level Analysis:
-	•	Scripts (11a, 11b): Scripts save group level evoked (stcEVK) data as numpy arrays.
-     •	Scripts (16a, 16b): Scripts save group level TF (stcTFR) data as numpy arrays.
+	•	Scripts (11a, 11b): Scripts save group-level evoked (stcEVK) data as numpy arrays.
+     	•	Scripts (16a, 16b): Scripts save group-level TF (stcTFR) data as numpy arrays.
+   
+5. Visualization & Contrast Analyses
+   Visualization of Source Data:
+	•	Scripts (12, 17): Plot evoked and TF source data in brain images as panels.
+   Contrast Analyses: Compare conditions (e.g., HC vs. PD, DBS effects).
+  	• 	Scripts (13a, 13b, 13c): contrast at single sub, save GROUP EVK: stcCondiContrast (HC, PD), stcDBScontrast (PD) as numpy array
+ 	•   	Scripts (18a, 18b, 18c): contrast at single sub, save GROUP TFR: stcCondiContrast (HC, PD), stcDBScontrast (PD) as numpy array	
+	•	Scripts (14, 19): Plot source contrasts in brain images.
+   Region of Interest (ROI) Definition and Visualization:
+	•	Scripts (20a, 20b): Define and visualize regions of interest (ROIs).
+
+6. Data Export
+	•	Script (21): Exports single-subject evoked values for each ROI into CSV files.
    
 
 
