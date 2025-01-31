@@ -1,24 +1,33 @@
 # EEG-analysis-pipeline
 EEG data analysis pipeline
 
-This doc gives the overview of the project GOGAIT - source reconstruction - workdone by Harish between 07/2023 to 11/2024. 
+The processing pipeline follows a clear structure, moving from raw EEG data input and preprocessing to group-level analyses, visualization, and data export. The analysis is organized into Sensor Space and Source Space analysis with specific scripts handling each step.
 
-working directory: /network/lustre/iss02/cenir/analyse/meeg/GOGAIT/Harish/gogait
+1. Data Input & Preprocessing
+	•	Scripts (01a, 01b): Convert EEG data from FieldTrip into single-subject epochs as numpy arrays.
+	•	Scripts (02a, 02b): Transform single-subject epochs into MNE format, including evoked responses.
 
-from 19/11/2024 onwards:change in the working directory. 
+2. ERP Analysis (Sensor Space Analysis - Blue Blocks)
+	•	Single-Subject Level:
+	•	Scripts (03a, 03b): Generate event-related potentials (ERPs) and topographies (N1, N2, P3).
+	•	Group-Level Analysis:
+	•	Scripts (04a, 04b): Perform group-level ERP analysis and save group-evoked data.
 
-study_path = '/network/iss/cenir/analyse/meeg/GOGAIT/Harish/gogait/'
+3. Time-Frequency (TF) Analysis (Sensor Space Analysis - Red Blocks)
+	•	Single-Subject Level:
+	•	Scripts (05a, 05b) and (07a, 07b): Perform Morlet wavelet and multitaper TF analyses, generating TF plots and data in MNE format.
+	•	Group-Level Analysis:
+	•	Scripts (06a, 06b) and (08a, 08b): Perform similar analyses at the group level.
+	•	Scripts (09a, 09b): Generate group-level Morlet TF topoplots.
 
-
-
-Main folders
-1) EEG: contains all the raw data and processed data such in numpy array format and MNE format
-     processed data includes: epochs, evoked, time frequency 
-     both in sensor space and source space (.stc)
-
-2) scripts: all the python scripts and pipelines for analyzing the data are present here. 
-
-3) reports: the outcomes of the scripts in html format are placed here and weekly reports are placed in the folder project_progress_meetings
+4. Source-Level Analysis (Source Space Analysis)
+   Single-Subject Level:
+	•	Scripts (10a, 10b): Scripts save evoked (stcEVK) data as numpy arrays.
+     •	Scripts (15a, 15b): Scripts save TF (stcTFR) data as numpy arrays.
+   Group-Level Analysis:
+	•	Scripts (11a, 11b): Scripts save group level evoked (stcEVK) data as numpy arrays.
+     •	Scripts (16a, 16b): Scripts save group level TF (stcTFR) data as numpy arrays.
+   
 
 
 INPUTs and OUTPUTs sample name formats (with one hc subject: BARER19, one condition: NoGo, and one event: target)
